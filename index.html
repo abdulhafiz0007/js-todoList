@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <h1 class="text-center text-4xl my-[50px] text-slate-900">TO DO List</h1>
+    
+    <div class="flex flex-col items-center">
+        <form class="js-todo-form text-center">
+            <input class="js-todo-input p-2 border-2 rounded w-[500px] outline-none focus-within:shadow-lg" type="text" placeholder="Enter a task" name="todo_list" aria-label="enter a task name" required>
+            <button class="text-white bg-green-600 p-[9px] px-4 rounded">Add new Task</button>
+        </form>
+        <ul class="js-todo-list mt-[40px]">
+           
+        </ul>
+    </div>
+
+    <template class="js-todo-template">
+        <li class="w-[500px] bg-stone-300 rounded p-2 flex justify-between items-center mb-2">
+            <span class="todo-name text-slate-700 font-medium text-[18px]">Reading book</span>
+            <button class="js-delete-button text-white bg-purple-600 p-[6px] px-4 rounded">Delete</button>
+        </li>
+    </template>
+
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
